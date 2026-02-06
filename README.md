@@ -74,6 +74,8 @@ This copies skills into:
 - `.github/skills/` for VS Code / GitHub Copilot
 - `.claude/skills/` for Claude Code (project-level)
 - `.cursor/skills/` for Cursor (project-level)
+- `.agent/skills/` for Antigravity
+- `.gemini/skills/` for Gemini CLI
 
 ### Install globally for Cursor
 

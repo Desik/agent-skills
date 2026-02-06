@@ -34,6 +34,24 @@ Agent Skills solve this by giving AI assistants **expert-level WordPress knowled
 | **wp-playground** | WordPress Playground for instant local environments |
 | **wpds** | WordPress Design System |
 
+## How It Works
+
+Each skill is a self-contained folder with instructions, references, and optional scripts:
+
+```
+skills/wp-block-development/
+├── SKILL.md              # Main instructions (when to use, procedure, verification)
+├── references/           # Deep-dive docs on specific topics
+│   ├── block-json.md
+│   ├── deprecations.md
+│   └── ...
+└── scripts/              # Deterministic helpers (detection, validation)
+    └── list_blocks.mjs
+```
+
+When you ask your AI assistant to work on WordPress code, it reads these skills and follows the documented procedures rather than guessing.
+
+
 ## Quick Start
 
 ### Installing skills with Skills.sh
@@ -120,23 +138,6 @@ node shared/scripts/skillpack-install.mjs --dest=../my-repo --targets=claude,cur
 ### Manual installation
 
 Copy any skill folder from `skills/` into your project's instructions directory for your AI assistant.
-
-## How It Works
-
-Each skill contains:
-
-```
-skills/wp-block-development/
-├── SKILL.md              # Main instructions (when to use, procedure, verification)
-├── references/           # Deep-dive docs on specific topics
-│   ├── block-json.md
-│   ├── deprecations.md
-│   └── ...
-└── scripts/              # Deterministic helpers (detection, validation)
-    └── list_blocks.mjs
-```
-
-When you ask your AI assistant to work on WordPress code, it reads these skills and follows the documented procedures rather than guessing.
 
 ## Compatibility
 

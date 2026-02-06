@@ -54,24 +54,21 @@ When you ask your AI assistant to work on WordPress code, it reads these skills 
 
 ## Quick Start
 
-### Installing skills with Skills.sh
+The fastest way to install skills is with a single command:
 
-Skills.sh provides a guided process for finding and installing skills
+```bash
+npx skills add WordPress/agent-skills --skill wp-plugin-development
+```
 
-Finding skills available:
+To see all available skills:
 
 ```bash
 npx skills add WordPress/agent-skills --list
 ```
-Installing skills:
+
+To install multiple skills at once:
 
 ```bash
-npx skills add WordPress/agent-skills --skill <name-of-the-skill>
-
-# Example of installing a specific skill
-npx skills add WordPress/agent-skills --skill wp-plugin-development
-
-# Example of installing more than one skill
 npx skills add WordPress/agent-skills --skill wp-plugin-development wp-abilities-api wp-playground
 ```
 

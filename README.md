@@ -36,6 +36,27 @@ Agent Skills solve this by giving AI assistants **expert-level WordPress knowled
 
 ## Quick Start
 
+### Installing skills with Skills.sh
+
+Skills.sh provides a guided process for finding and installing skills
+
+Finding skills available:
+
+```bash
+npx skills add WordPress/agent-skills --list
+```
+Installing skills:
+
+```bash
+npx skills add WordPress/agent-skills --skill <name-of-the-skill>
+
+# Example of installing a specific skill
+npx skills add WordPress/agent-skills --skill wp-plugin-development
+
+# Example of installing more than one skill
+npx skills add WordPress/agent-skills --skill wp-plugin-development wp-abilities-api wp-playground
+```
+
 ### Install globally for Claude Code
 
 ```bash

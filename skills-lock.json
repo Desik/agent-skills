@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "powershell-windows": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "51d420421a50017b23a09dc4c46e54871d93f205aa095ff553b2963f2e388548"
+    }
+  }
+}
